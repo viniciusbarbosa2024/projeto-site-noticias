@@ -19,14 +19,13 @@ header {
     background-color: var(--cor5);
 }
 
-header a {
-    display: inline-block;
+header div#logo {
+    padding: 20px;
 }
 
-header div#logo {
+header a {
     font: small-caps bolder 3em Arial, Helvetica, sans-serif;
     color: white;
-    padding: 20px;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.466);
     text-decoration: underline;
 }
@@ -51,6 +50,51 @@ main {
     margin: 30px auto;
 }
 
+main h1 {
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+main div#conteiner {
+    overflow-x: auto;
+}
+
+main table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+main thead {
+    background-color: var(--cor5);
+    color: white;
+}
+
+main tr:nth-child(2n) {
+    background-color: var(--cor1);
+}
+
+main th,td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+main p#descrtab {
+    text-indent: 0px;
+    color: rgb(109, 109, 109);
+    font-size: 0.9em;
+}
+
+main h2 {
+    padding: 20px 0px 10px 0px;
+}
+
 main img {
     width: 50%;
+    margin-top: 20px;
 }
