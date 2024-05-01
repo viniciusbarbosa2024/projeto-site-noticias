@@ -1,11 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --cor0: #c5ebd6;
     --cor1: #83e1ad;
-    --cor3: #3ddc84;
-    --cor4: #2fa866;
-    --cor5: #063d1e;
+    --cor2: #063d1e;
 }
 
 * {
@@ -16,7 +13,7 @@
 
 header {
     height: 100px;
-    background-color: var(--cor5);
+    background-color: var(--cor2);
 }
 
 header div#logo {
@@ -71,7 +68,7 @@ main table {
 }
 
 main thead {
-    background-color: var(--cor5);
+    background-color: var(--cor2);
     color: white;
 }
 
@@ -97,4 +94,56 @@ main h2 {
 main img {
     width: 50%;
     margin-top: 20px;
+}
+
+footer {
+    height: 100px;
+    background-color: var(--cor2);
+    position: relative;
+}
+
+footer div#logofooter {
+    display: inline-block;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+footer div#logofooter > a {
+    font: small-caps bolder 2em Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.466);
+    text-decoration: underline;
+}
+
+footer div#redes-sociais {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+footer div#redes-sociais > img {
+    height: 40px;
+    margin-left: 15px;
+}
+
+footer div#redes-sociais > img:hover {
+    transform: translate(2px,-2px);
+}
+
+footer p#link-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+    font-size: 0.8em;
+    color: lightgray;
+}
+
+footer p#link-icon > a {
+    text-decoration: none;
+    color: lightgray;
 }
